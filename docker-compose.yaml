@@ -14,6 +14,7 @@ services:
       - 8601:8501
     volumes:
       - .:/workspace
+      - ~/.ssh:/root/.ssh
     networks:
       - default
 
