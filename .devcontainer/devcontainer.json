@@ -1,0 +1,36 @@
+{
+    "dockerComposeFile": "../docker-compose.yaml",
+    "service": "playground",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "njpwerner.autodocstring",
+                "ms-python.black-formatter",
+                "streetsidesoftware.code-spell-checker",
+                "usernamehw.errorlens",
+                "wayou.vscode-todo-highlight",
+                "KevinRose.vsc-python-indent",
+                "mhutchie.git-graph",
+                "donjayamanne.githistory",
+                "GitHub.copilot",
+                "GitHub.copilot-chat",
+                "codezombiech.gitignore",
+                "eamodio.gitlens",
+                "oderwat.indent-rainbow",
+                "VisualStudioExptTeam.vscodeintellicode",
+                "ms-python.isort",
+                "ms-toolsai.jupyter",
+                "ms-toolsai.vscode-jupyter-cell-tags",
+                "ms-toolsai.vscode-jupyter-slideshow",
+                "ms-toolsai.jupyter-keymap",
+                "ms-toolsai.jupyter-renderers",
+                "christian-kohler.path-intellisense",
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "mechatroner.rainbow-csv",
+                "shardulm94.trailing-spaces"
+            ]
+        }
+    }
+}

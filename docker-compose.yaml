@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  playground:
+    image: langchain-playground:3.10-bullseye
+    container_name: langchain-playground
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .env
+    restart: always
+    tty: true
+    ports:
+      - 8601:8501
+    volumes:
+      - .:/workspace
+    networks:
+      - default
+
+networks:
+  default:
+    name: net-langchain-playground
+    driver: bridge
+    ipam:
+      config:
+        - subnet: ${COMPOSED_SUBNET}
