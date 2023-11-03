@@ -1,9 +1,9 @@
 version: '3'
 
 services:
-  playground:
-    image: langchain-playground:3.10-bullseye
-    container_name: langchain-playground
+  dev:
+    image: ${PROJECT_NAME}:3.10-bullseye
+    container_name: ${PROJECT_NAME}
     build:
       context: .
       dockerfile: Dockerfile
@@ -14,13 +14,14 @@ services:
       - 8601:8501
     volumes:
       - .:/workspace
-      - ~/.ssh:/root/.ssh
+      - ${HOME}/.ssh:/root/.ssh
+      - ${HOME}/.aws:/root/.aws
     networks:
       - default
 
 networks:
   default:
-    name: net-langchain-playground
+    name: net-${PROJECT_NAME}
     driver: bridge
     ipam:
       config:
