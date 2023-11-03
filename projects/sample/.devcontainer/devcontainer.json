@@ -1,6 +1,6 @@
 {
     "dockerComposeFile": "../docker-compose.yaml",
-    "service": "playground",
+    "service": "dev",
     "workspaceFolder": "/workspace",
     "customizations": {
         "vscode": {
