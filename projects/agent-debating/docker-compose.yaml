@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  dev:
+    image: ${PROJECT_NAME}:3.10-bullseye
+    container_name: ${PROJECT_NAME}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .env
+    restart: always
+    tty: true
+    ports:
+      - 8601:8501
+    volumes:
+      - .:/workspace
+      - ${HOME}/.ssh:/root/.ssh
+      - ${HOME}/.aws:/root/.aws
+    networks:
+      - default
+
+networks:
+  default:
+    name: net-${PROJECT_NAME}
+    driver: bridge
+    ipam:
+      config:
+        - subnet: ${COMPOSED_SUBNET}

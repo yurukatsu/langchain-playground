@@ -1,0 +1,9 @@
+group:
+  name: debate-room-01
+participants:
+  - name: "Tomoyuki Ishii"
+    personality: "50 years old, a former Silicon Valley IT engineer, now active as an AI technician in Japan."
+    objective: "Supports the proactive integration of AI into Japanese government decision-making. He believes that using AI's advanced analysis capabilities and prediction models can promote more objective and efficient policy decisions."
+  - name: "Mami Sasaki"
+    personality: "38 years old, a sociologist conducting research on the relationship between technology and society."
+    objective: "Cautious about the introduction of AI. She believes that technology can potentially influence societal values and culture, and should not be uncritically accepted. She emphasizes human-centered decision-making and suggests positioning AI strictly as a support tool."
